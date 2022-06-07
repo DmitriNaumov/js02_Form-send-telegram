@@ -1,0 +1,142 @@
+/* general *******************************************/
+/****************************************************/
+:root {
+	--title-color: #000;
+	--indent2: 100px;
+	--border-radius: 5px;
+	--form-padd: 10px;
+	--fz-prim: 18px;
+	--color-prim: #fff;
+	--color-second: rgb(33, 95, 252);
+}
+
+* {
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+}
+
+.wrapp {
+	position: relative;
+	width: 100%;
+	height: auto;
+	padding: 0 15px;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.content {
+	max-width: 1400px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 50px;
+	font-weight: 800;
+	color: var(--title-color);
+}
+
+/* form ***********************************/
+/*****************************************/
+.form-tg {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	height: auto;
+}
+
+.form-tg__label {
+	margin-bottom: 20px;
+}
+
+.form-tg_set {
+	width: 100%;
+	padding: 0 var(--form-padd);
+	font-size: var(--fz-prim);
+	border-radius: var(--border-radius);
+	border: 1px solid var(--color-second);
+}
+
+.form-tg__input {
+	height: 50px;
+}
+
+.form-tg__textarea {
+	height: 100px;
+	resize: none;
+	padding-top: var(--form-padd);
+}
+
+.btn {
+	border: none;
+	border-radius: var(--border-radius);
+	cursor: pointer;
+	text-transform: uppercase;
+	padding: 20px;
+	font-size: var(--fz-prim);
+	font-weight: 700;
+	letter-spacing: 1px;
+	transition: .3s;
+}
+
+.btn_color1 {
+	color: var(--color-prim);
+	background: var(--color-second);
+}
+
+.btn.btn_color1:hover {
+	background: rgb(18, 128, 255);
+}
+
+
+.form-tg__select {
+	position: relative;
+	cursor: pointer;
+}
+
+.form-tg__select-sel {
+	display: flex;
+	align-items: center;
+}
+
+.form-tg__option {
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 130px;
+	top: calc(100% - 3px);
+	left: 0;
+	list-style: none;
+	background-color: var(--color-prim);
+	border-radius: var(--border-radius);
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	border: 1px solid var(--color-second);
+	z-index: 2;
+}
+
+.scrollbar-inner {
+	height: 100%;
+}
+
+.form-tg__option .scroll-wrapper {
+	padding-right: 10px !important;
+}
+
+.form-tg__option-list {
+	padding: var(--form-padd);
+	transition: .3s;
+}
+
+.form-tg__option-list.active,
+.form-tg__option-list:hover {
+	background: rgb(85, 164, 255);
+	color: var(--color-prim);
+}
+
+.form-tg__option-list.active {
+	pointer-events: none;
+}

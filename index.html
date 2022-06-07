@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Форма отправки в телеграм</title>
+	<link rel="icon" href="img/icon.jpg" type="icon/x-icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style/normalize.css">
+	<link rel="stylesheet" href="style/scrollbar.css">
+	<link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+	<!-- div .wrapp -->
+	<div class="wrapp">
+
+		<!-- header .header -->
+		<header>
+			<div class="content">
+				<h1>Форма отправки в телеграм</h1>
+			</div>
+		</header>
+		<!-- header .header END -->
+
+		<!-- main .main -->
+		<main class="main">
+
+			<!-- section .section -->
+			<section class="section">
+
+				<div class="content">
+
+					<div class="section__wrapp">
+
+						<!-- form .form-tg -->
+						<form class="form-tg">
+
+							<label class="form-tg__label">
+								<input type="text" name="name" class="form-tg__input form-tg_set" placeholder="Name">
+							</label>
+							<label class="form-tg__label">
+								<input type="tel" name="tel" class="form-tg__input form-tg_set mask_tel"
+									placeholder="Tel">
+							</label>
+							<label class="form-tg__label">
+								<input type="mail" name="mail" class="form-tg__input form-tg_set" placeholder="Mail">
+							</label>
+							<label class="form-tg__label">
+								<div class="form-tg__select">
+									<div class="form-tg__select-sel form-tg__input form-tg_set">Option 1</div>
+									<ul class="form-tg__option">
+										<div class="scrollbar-inner">
+											<li class="form-tg__option-list active" data-option="Option 1">Option 1</li>
+											<li class="form-tg__option-list" data-option="Option 2">Option 2</li>
+											<li class="form-tg__option-list" data-option="Option 3">Option 3</li>
+											<li class="form-tg__option-list" data-option="Option 4">Option 4</li>
+											<li class="form-tg__option-list" data-option="Option 5">Option 5</li>
+										</div>
+									</ul>
+								</div>
+								<input type="hidden" class="form-option-hidden" name="option" value="option 1">
+							</label>
+							<label class="form-tg__label">
+								<textarea name="mess" class="form-tg__textarea form-tg_set"
+									placeholder="Message"></textarea>
+							</label>
+							<button class="form-tg__button btn btn_color1">Send</button>
+						</form>
+						<!-- form .form-tg END -->
+					</div>
+				</div>
+			</section>
+			<!-- section .section END -->
+		</main>
+		<!-- main .main END -->
+	</div>
+	<!-- /div .wrapp END -->
+
+	<!-- script -->
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/scrollbar.min.js"></script>
+	<script src="https://unpkg.com/imask"></script>
+	<script src="js/js.js"></script>
+	<!-- script END -->
+</body>
+
+</html>
